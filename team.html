@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Pure Home | Properties</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Font awesome -->
+    <link href="font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="bootstrap.css" rel="stylesheet">   
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="nouislider.css">
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Theme color -->
+    <link id="switcher" href="default-theme.css" rel="stylesheet">     
+
+    <!-- Main style sheet -->
+    <link href="style.css" rel="stylesheet">    
+
+   
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body class="aa-price-range">  
+  <!-- Pre Loader -->
+  <div id="aa-preloader-area">
+    <div class="pulse"></div>
+  </div>
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  
+
+<!-- Menu Section -->
+<section>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid" style="display: flex; align-items: center; justify-content: center; padding: 0;">
+            <!-- Left Horizontal Menu -->
+            <div style="flex: 1; display: flex; justify-content: flex-start;">
+                <ul id="top-menu" class="nav navbar-nav aa-main-nav" style="display: flex; gap: 15px;">
+                    <li class="active" style="color: #8B4513;"><a href="index.html" style="color: inherit;">HOME</a></li>
+                    <li class="dropdown" style="color: #8B4513;">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="properties.html" style="color: inherit;">PROPERTIES <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="properties.html">DUBAI PROPERTIES</a></li>
+                            <li><a href="properties.html">ABU DHABI PROPERTIES</a></li>
+                            <li><a href="properties-detail.html">AL AIN PROPERTIES</a></li>
+                        </ul>
+                    </li>
+                    <li style="color: #8B4513;"><a href="gallery.html" style="color: inherit;">GALLERY</a></li>
+                    <li class="dropdown" style="color: #8B4513;">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html" style="color: inherit;">BLOG <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="blog-archive.html">BLOG</a></li>
+                            <li><a href="blog-single.html">BLOG DETAILS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Centered Logo -->
+            <div style="flex: 0; display: flex; justify-content: center; align-items: center; padding: 0 20px;">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logooo.png" alt="Home Property Logo" class="logo">
+                </a>
+            </div>
+
+            <!-- Right Horizontal Menu -->
+            <div style="flex: 1; display: flex; justify-content: flex-end;">
+                <ul class="nav navbar-nav aa-main-nav" style="display: flex; gap: 15px;">
+                    <li style="color: #8B4513;"><a href="contact.html" style="color: inherit;">OUR TEAM</a></li>
+                    <li style="color: #8B4513;"><a href="signin.html" style="color: inherit;">LOGIN</a></li>
+                    <li style="color: #8B4513;"><a href="register.html" style="color: inherit;">REGISTER</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+<style>
+    .navbar {
+        height: 180px; /* Adjust as needed for banner size */
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .logo {
+        height: auto; /* Adjust if needed */
+        max-height: 120px; /* Increased maximum height */
+        margin-top: -60px; /* Move the logo up slightly to center it */
+    }
+
+    .btn-login, .btn-register {
+        color: #000; /* Customize color as needed */
+        padding: 10px;
+    }
+
+    :root {
+        --navbar-opacity: 0.9; /* Control transparency here (0 to 1), set to 0.5 for 50% transparency */
+    }
+
+    /* Navbar initial styles with transparency */
+    .navbar-default {
+        background-color: rgba(255, 255, 255, var(--navbar-opacity)); /* White with defined transparency */
+        border: none;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s; /* Smooth transition on scroll */
+    }
+
+    /* Adjust the container padding to avoid overlap with fixed navbar */
+    body {
+        padding-top: 20px;
+    }
+
+    /* Logo styling */
+    .navbar-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px;
+		margin-top: -70px;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+    }
+
+    .logo {
+    max-height: 80px;
+    height: auto;
+    width: auto;
+    margin-top: -50px; /* Adjust this value to move it upward */
+	 opacity: 0.9;
+}
+
+    /* Hover effect */
+    .aa-main-nav > li > a:hover {
+        color: white !important;
+        background-color: #83c5be !important;
+        text-decoration: none;
+    }
+
+    /* Dropdown menu styling */
+    .dropdown-menu {
+        background-color: rgba(237, 246, 249, 0.9); /* Slightly transparent dropdown background */
+        border: none;
+    }
+
+    .dropdown-menu > li > a {
+        color: #006d77 !important;
+    }
+
+    .dropdown-menu > li > a:hover {
+        background-color: #83c5be !important;
+        color: white !important;
+    }
+
+    .btn-login {
+        background-color: #007bff; /* Blue background */
+        color: white; /* White text */
+        padding: 10px 15px; /* Padding for button */
+        border-radius: 4px; /* Rounded corners */
+        text-decoration: none; /* No underline */
+    }
+
+    .btn-register {
+        background-color: #28a745; /* Green background */
+        color: white; /* White text */
+        padding: 10px 15px; /* Padding for button */
+        border-radius: 4px; /* Rounded corners */
+        text-decoration: none; /* No underline */
+    }
+
+    /* Hover effects for the buttons */
+    .btn-login:hover,
+    .btn-register:hover {
+        opacity: 0.8; /* Slightly transparent on hover */
+    }
+</style>
+
+
+
+
+  
+
+  <!-- About us -->
+<section id="aa-about-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="aa-about-us-area">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="aa-about-us-left">
+                <img src="about-us.png" alt="image">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="aa-about-us-right">
+                <div class="aa-title">
+                  <h2>About Us</h2>
+                  <span></span>
+                </div>
+                <p>At Pure Home Properties, we are dedicated to providing top-notch rental properties across Dubai, Abu Dhabi, and Al Ain. With years of experience in the real estate market, we understand the needs of our clients and strive to offer the best living solutions. Our portfolio includes a diverse range of properties, from luxury villas to cozy apartments, ensuring that everyone can find their ideal home.</p>                  
+                <ul>
+                  <li>Expertise in the UAE rental market, focusing on Dubai, Abu Dhabi, and Al Ain.</li>
+                  <li>A wide selection of properties catering to different budgets and preferences.</li>
+                  <li>Personalized service to help you find the perfect rental property.</li>                    
+                  <li>Comprehensive support throughout the renting process, from viewing to contract signing.</li>
+                  <li>Strong relationships with landlords to ensure high-quality living conditions.</li>
+                  <li>Commitment to transparency and client satisfaction in every transaction.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / About us -->
+
+
+
+
+ <!-- Service section -->
+<section id="aa-service">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="aa-service-area">
+          <div class="aa-title">
+            <h2>Our Services</h2>
+            <span></span>
+            <p>We offer a range of professional services to assist you in managing and renting properties effectively.</p>
+          </div>
+          <!-- service content -->
+          <div class="aa-service-content">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="aa-single-service">
+                  <div class="aa-service-icon">
+                    <span class="fa fa-home"></span>
+                  </div>
+                  <div class="aa-single-service-content">
+                    <h4><a href="#">Property Management</a></h4>
+                    <p>Comprehensive management services for residential and commercial properties to ensure maximum value and tenant satisfaction.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="aa-single-service">
+                  <div class="aa-service-icon">
+                    <span class="fa fa-check"></span>
+                  </div>
+                  <div class="aa-single-service-content">
+                    <h4><a href="#">Tenant Placement</a></h4>
+                    <p>We find the right tenants for your properties through thorough screening and marketing strategies to minimize vacancy time.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="aa-single-service">
+                  <div class="aa-service-icon">
+                    <span class="fa fa-crosshairs"></span>
+                  </div>
+                  <div class="aa-single-service-content">
+                    <h4><a href="#">Property Maintenance</a></h4>
+                    <p>Our team ensures your properties are well-maintained with prompt repairs and regular inspections to keep them in top condition.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="aa-single-service">
+                  <div class="aa-service-icon">
+                    <span class="fa fa-bar-chart-o"></span>
+                  </div>
+                  <div class="aa-single-service-content">
+                    <h4><a href="#">Market Analysis</a></h4>
+                    <p>Stay informed with our in-depth market analysis and reports to make strategic decisions about your property investments.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / Service section -->
+
+
+ <!-- Promo Banner Section -->
+<section id="aa-promo-banner" style="background-image: url('slider/3.jpg'); background-size: cover; background-position: center; padding: 60px 20px; color: white;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="aa-promo-banner-area" style="padding: 60px 20px;">
+          <h3>Discover Your Perfect Home</h3>
+          <p>Explore a wide range of properties that meet your needs and preferences. Our team is dedicated to helping you find a space that feels like home.</p>
+          <a href="#" class="aa-view-btn">Browse Properties</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / Promo Banner Section -->
+
+
+
+
+  <!-- Our Agent Section-->
+<section id="aa-agents">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="aa-agents-area">
+          <div class="aa-title">
+            <h2>Our Agents</h2>
+            <span></span>
+            <p>Meet our dedicated team of real estate professionals who are here to help you find your ideal property.</p>
+          </div>
+          <!-- agents content -->
+          <div class="aa-agents-content">
+            <ul class="aa-agents-slider">
+              <li>
+                <div class="aa-single-agents">
+                  <div class="aa-agents-img">
+                    <img src="agents/agent-1.png" alt="Philip Smith">
+                  </div>
+                  <div class="aa-agents-info">
+                    <h4><a href="#">Philip Smith</a></h4>
+                    <span>Top Agent</span>
+                    <div class="aa-agent-social">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="aa-single-agents">
+                  <div class="aa-agents-img">
+                    <img src="agents/agent-5.png" alt="Adam Barney">
+                  </div>
+                  <div class="aa-agents-info">
+                    <h4><a href="#">Adam Barney</a></h4>
+                    <span>Expert Agent</span>
+                    <div class="aa-agent-social">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="aa-single-agents">
+                  <div class="aa-agents-img">
+                    <img src="agents/agent-3.png" alt="Paul Walker">
+                  </div>
+                  <div class="aa-agents-info">
+                    <h4><a href="#">Paul Walker</a></h4>
+                    <span>Director</span>
+                    <div class="aa-agent-social">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="aa-single-agents">
+                  <div class="aa-agents-img">
+                    <img src="agents/agent-4.png" alt="John Smith">
+                  </div>
+                  <div class="aa-agents-info">
+                    <h4><a href="#">John Smith</a></h4>
+                    <span>Jr. Agent</span>
+                    <div class="aa-agent-social">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- Repeat the agent items as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / Our Agent Section-->
+
+
+ <!-- Client Testimonial -->
+<section id="aa-client-testimonial" style="background-image: url('slider/2.jpg'); background-size: cover; background-position: center; padding: 60px 0; color: white;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="aa-client-testimonial-area">
+          <div class="aa-title">
+            <h2>What Our Clients Say</h2>
+            <span></span>
+            <p>Discover how our dedicated team has helped clients find their dream properties.</p>
+          </div>
+          <!-- testimonial content -->
+          <div class="aa-testimonial-content">
+            <!-- testimonial slider -->
+            <ul class="aa-testimonial-slider">
+              <li>
+                <div class="aa-testimonial-single">
+                  <div class="aa-testimonial-img">
+                    <img src="testimonial-1.png" alt="David Muller testimonial">
+                  </div>
+                  <div class="aa-testimonial-info">
+                    <p>Moving to a new city was stressful, but Pure Home Properties made finding an apartment a breeze. They listened to my needs and found the perfect place in a great neighborhood. Highly recommended!"
+– Emily W.
+
+"I needed a new location for my boutique, and Pure Home Properties helped me find a prime retail spot. The process was quick and seamless. I couldn’t be happier with their service!</p>
+                  </div>
+                  <div class="aa-testimonial-bio">
+                    <p>Jacob S.</p>
+                    <span>Boutique Owner</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="aa-testimonial-single">
+                  <div class="aa-testimonial-img">
+                    <img src="testimonial-2.png" alt="David Muller testimonial">
+                  </div>
+                  <div class="aa-testimonial-info">
+                    <p>Finding the perfect apartment in the heart of the city seemed like an impossible task, but Pure Home Properties made it easy. The team understood my needs and found the right place for me in no time. Their service was exceptional!</p>
+                  </div>
+                  <div class="aa-testimonial-bio">
+                    <p>David Muller</p>
+                    <span>Business Owner</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="aa-testimonial-single">
+                  <div class="aa-testimonial-img">
+                    <img src="testimonial-3.png" alt="David Muller testimonial">
+                  </div>
+                  <div class="aa-testimonial-info">
+                    <p>Pure Home Properties, specialize in connecting people with exceptional rental properties. Whether you're looking for a modern apartment in the city or a prime location for your business, our portfolio of apartments and commercial spaces is designed to meet diverse needs. Our team is dedicated to simplifying the rental process, providing support at every stage to ensure your experience is smooth, transparent, and tailored to your goals. Explore our properties today and find the perfect place to call home or grow your business.</p>
+                  </div>
+                  <div class="aa-testimonial-bio">
+                    <p>Olivia T.</p>
+                    <span> Designer</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Client Testimonial -->
+
+
+
+  <!-- Client brand -->
+  <section id="aa-client-brand">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-client-brand-area">
+            <ul class="aa-client-brand-slider">
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="client-brand-1.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="client-brand-2.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="client-brand-3.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="client-brand-5.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="client-brand-4.png" alt="brand image">
+                </div>
+              </li>
+               <li>
+                <div class="aa-client-single-brand">
+                  <img src="client-brand-1.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="client-brand-2.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="client-brand-3.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="client-brand-5.png" alt="brand image">
+                </div>
+              </li>
+              <li>
+                <div class="aa-client-single-brand">
+                  <img src="client-brand-4.png" alt="brand image">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Client brand -->
+
+  
+
+  <!-- Footer -->
+  <footer id="aa-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="aa-footer-area">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="aa-footer-left">
+               <p>All rights reserved <a rel="nofollow" href="index.html">Pure Home</a></p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="aa-footer-middle">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="aa-footer-right">
+                <a href="#">Home</a>
+                <a href="#">Support</a>
+                <a href="#">License</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy & Term</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / Footer -->
+
+ 
+  
+  <!-- jQuery library -->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <script src="js/jquery.min.js"></script>   
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>   
+  <!-- slick slider -->
+  <script type="text/javascript" src="js/slick.js"></script>
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="js/nouislider.js"></script>
+   <!-- mixit slider -->
+  <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script> 
+  
+ <!-- Include Chatbot -->
+<link rel="stylesheet" href="chatbot/chatbot.css">
+<div id="chatbot-placeholder" style="display: none;"></div>
+<button id="chatbot-toggle" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    Open Chatbot
+</button>
+
+<script src="chatbot/chatbot.js"></script>
+<script>
+    // Load chatbot HTML dynamically
+    fetch('chatbot/chatbot.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('chatbot-placeholder').innerHTML = data;
+        });
+
+    // Toggle chatbot visibility
+    document.getElementById('chatbot-toggle').addEventListener('click', function() {
+        var chatbot = document.getElementById('chatbot-placeholder');
+        var toggleButton = document.getElementById('chatbot-toggle');
+        
+        if (chatbot.style.display === 'none') {
+            chatbot.style.display = 'block';
+            toggleButton.innerText = 'Close Chatbot';
+        } else {
+            chatbot.style.display = 'none';
+            toggleButton.innerText = 'Open Chatbot';
+        }
+    });
+</script>
+
+  </body>
+</html>

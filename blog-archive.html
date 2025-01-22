@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Home Property | Blog Archive</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+   
+    <!-- Font awesome -->
+    <link href="font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="bootstrap.css" rel="stylesheet">   
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="nouislider.css">
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Theme color -->
+    <link id="switcher" href="default-theme.css" rel="stylesheet">     
+
+    <!-- Main style sheet -->
+    <link href="style.css" rel="stylesheet">    
+
+   
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  </head>
+  <body>
+  <!-- Pre Loader -->
+  <div id="aa-preloader-area">
+    <div class="pulse"></div>
+  </div>
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+  <!-- Start header section -->
+  <header id="aa-header">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-header-area">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="aa-header-left">
+                  <div class="aa-telephone-no">
+                    <span class="fa fa-phone"></span>
+                    971-54-400-7351
+                  </div>
+                  <div class="aa-email hidden-xs">
+                    <span class="fa fa-envelope-o"></span> info@khalfanproperties.com
+                  </div>
+                </div>              
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="aa-header-right">
+                  <a href="register.html" class="aa-register">Register</a>
+                  <a href="signin.html" class="aa-login">Login</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header section -->
+ <!-- Menu Section -->
+<section>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid" style="display: flex; align-items: center; justify-content: center; padding: 0;">
+            <!-- Left Horizontal Menu -->
+            <div style="flex: 1; display: flex; justify-content: flex-start;">
+                <ul id="top-menu" class="nav navbar-nav aa-main-nav" style="display: flex; gap: 15px;">
+                    <li class="active" style="color: #8B4513;"><a href="index.html" style="color: inherit;">HOME</a></li>
+                    <li class="dropdown" style="color: #8B4513;">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="properties.html" style="color: inherit;">PROPERTIES <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="properties.html">DUBAI PROPERTIES</a></li>
+                            <li><a href="properties.html">ABU DHABI PROPERTIES</a></li>
+                            <li><a href="properties-detail.html">AL AIN PROPERTIES</a></li>
+                        </ul>
+                    </li>
+                    <li style="color: #8B4513;"><a href="gallery.html" style="color: inherit;">GALLERY</a></li>
+                    <li class="dropdown" style="color: #8B4513;">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html" style="color: inherit;">BLOG <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="blog-archive.html">BLOG</a></li>
+                            <li><a href="blog-single.html">BLOG DETAILS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Centered Logo -->
+            <div style="flex: 0; display: flex; justify-content: center; align-items: center; padding: 0 20px;">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logooo.png" alt="Home Property Logo" class="logo">
+                </a>
+            </div>
+
+            <!-- Right Horizontal Menu -->
+            <div style="flex: 1; display: flex; justify-content: flex-end;">
+                <ul class="nav navbar-nav aa-main-nav" style="display: flex; gap: 15px;">
+                    <li style="color: #8B4513;"><a href="team.html" style="color: inherit;">OUR TEAM</a></li>
+                    <li style="color: #8B4513;"><a href="signin.html" style="color: inherit;">LOGIN</a></li>
+                    <li style="color: #8B4513;"><a href="register.html" style="color: inherit;">REGISTER</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+<style>
+    .navbar {
+        height: 180px; /* Adjust as needed for banner size */
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .logo {
+        height: auto; /* Adjust if needed */
+        max-height: 120px; /* Increased maximum height */
+        margin-top: -60px; /* Move the logo up slightly to center it */
+    }
+
+    .btn-login, .btn-register {
+        color: #000; /* Customize color as needed */
+        padding: 10px;
+    }
+
+    :root {
+        --navbar-opacity: 0.9; /* Control transparency here (0 to 1), set to 0.5 for 50% transparency */
+    }
+
+    /* Navbar initial styles with transparency */
+    .navbar-default {
+        background-color: rgba(255, 255, 255, var(--navbar-opacity)); /* White with defined transparency */
+        border: none;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s; /* Smooth transition on scroll */
+    }
+
+    /* Adjust the container padding to avoid overlap with fixed navbar */
+    body {
+        padding-top: 20px;
+    }
+
+    /* Logo styling */
+    .navbar-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px;
+		margin-top: -70px;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+    }
+
+    .logo {
+    max-height: 80px;
+    height: auto;
+    width: auto;
+    margin-top: -50px; /* Adjust this value to move it upward */
+	 opacity: 0.9;
+}
+
+    /* Hover effect */
+    .aa-main-nav > li > a:hover {
+        color: white !important;
+        background-color: #83c5be !important;
+        text-decoration: none;
+    }
+
+    /* Dropdown menu styling */
+    .dropdown-menu {
+        background-color: rgba(237, 246, 249, 0.9); /* Slightly transparent dropdown background */
+        border: none;
+    }
+
+    .dropdown-menu > li > a {
+        color: #006d77 !important;
+    }
+
+    .dropdown-menu > li > a:hover {
+        background-color: #83c5be !important;
+        color: white !important;
+    }
+
+    .btn-login {
+        background-color: #007bff; /* Blue background */
+        color: white; /* White text */
+        padding: 10px 15px; /* Padding for button */
+        border-radius: 4px; /* Rounded corners */
+        text-decoration: none; /* No underline */
+    }
+
+    .btn-register {
+        background-color: #28a745; /* Green background */
+        color: white; /* White text */
+        padding: 10px 15px; /* Padding for button */
+        border-radius: 4px; /* Rounded corners */
+        text-decoration: none; /* No underline */
+    }
+
+    /* Hover effects for the buttons */
+    .btn-login:hover,
+    .btn-register:hover {
+        opacity: 0.8; /* Slightly transparent on hover */
+    }
+</style>
+
+  <!-- Start Proerty header  -->
+  <section id="aa-property-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-property-header-inner">
+            <h2>Blog Page</h2>
+            <ol class="breadcrumb">
+            <li><a href="#">HOME</a></li>            
+            <li class="active">Blog</li>
+          </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!-- End Proerty header  -->
+
+  <!-- Start Blog  -->
+  <section id="aa-blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-blog-area">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="aa-blog-content">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                      <article class="aa-blog-single">
+                        <figure class="aa-blog-img">
+                          <a href="#"><img alt="img" src="blog-img-1.jpg"></a>
+                          <span class="aa-date-tag">15 April, 16</span>
+                        </figure>
+                        <div class="aa-blog-single-content">
+                          <h3><a href="#">Welcome to Our Blog Archive!</a></h3>
+                          <p>Explore our collection of articles, tips, and insights tailored to property enthusiasts, tenants, and landlords alike. Whether you're looking for guidance on property management, rental trends, or maintenance tips, we have something for you.</p>
+                          <div class="aa-blog-single-bottom">
+                            <a class="aa-blog-author" href="#"><i class="fa fa-user"></i> Admin</a>
+                            <a class="aa-blog-comments" href="#"><i class="fa fa-comment-o"></i>6</a>
+                          </div>
+                        </div>                   
+                      </article>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <article class="aa-blog-single">
+                        <figure class="aa-blog-img">
+                          <a href="#"><img alt="img" src="blog-img-2.jpg"></a>
+                          <span class="aa-date-tag">15 April, 16</span>
+                        </figure>
+                        <div class="aa-blog-single-content">
+                          <h3><a href="#">The Ultimate Guide to Tenant Retention</a></h3>
+                          <p>Retaining tenants is crucial for steady income and reduced turnover costs. To keep tenants satisfied, prioritize prompt communication and address maintenance requests swiftly. Show appreciation through occasional gestures, like small discounts or holiday cards. Building a positive relationship makes tenants feel valued, increasing the likelihood they’ll renew their leases.</p>
+                          <div class="aa-blog-single-bottom">
+                            <a class="aa-blog-author" href="#"><i class="fa fa-user"></i> Admin</a>
+                            <a class="aa-blog-comments" href="#"><i class="fa fa-comment-o"></i>6</a>
+                          </div>
+                        </div>                   
+                      </article>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <article class="aa-blog-single">
+                        <figure class="aa-blog-img">
+                          <a href="#"><img alt="img" src="blog-img-3.jpg"></a>
+                          <span class="aa-date-tag">15 April, 16</span>
+                        </figure>
+                        <div class="aa-blog-single-content">
+                          <h3><a href="#">5 Essential Tips for First-Time Landlords</a></h3>
+                          <p>New to property management? Start by setting a competitive rent rate based on market research. Ensure your lease agreements are clear and legally sound, outlining responsibilities for both you and the tenant. Regular property inspections can prevent minor issues from escalating, and having an emergency fund helps cover unexpected repairs. Staying organized and informed will make your landlord journey smoother.
+
+</p>
+                          <div class="aa-blog-single-bottom">
+                            <a class="aa-blog-author" href="#"><i class="fa fa-user"></i> Admin</a>
+                            <a class="aa-blog-comments" href="#"><i class="fa fa-comment-o"></i>6</a>
+                          </div>
+                        </div>                   
+                      </article>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <article class="aa-blog-single">
+                        <figure class="aa-blog-img">
+                          <a href="#"><img alt="img" src="blog-img-1.jpg"></a>
+                          <span class="aa-date-tag">15 April, 16</span>
+                        </figure>
+                        <div class="aa-blog-single-content">
+                          <h3><a href="#">How to Boost Your Property’s Curb Appeal</a></h3>
+                          <p>Attracting tenants begins with a strong first impression. Simple improvements like fresh landscaping, updated paint, and outdoor lighting can enhance curb appeal. Potted plants, clean pathways, and a modern door can make a significant difference in how potential tenants perceive your property. Investing in these small upgrades can lead to faster rentals and satisfied tenants.</p>
+                          <div class="aa-blog-single-bottom">
+                            <a class="aa-blog-author" href="#"><i class="fa fa-user"></i> Admin</a>
+                            <a class="aa-blog-comments" href="#"><i class="fa fa-comment-o"></i>6</a>
+                          </div>
+                        </div>                   
+                      </article>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <article class="aa-blog-single">
+                        <figure class="aa-blog-img">
+                          <a href="#"><img alt="img" src="blog-img-2.jpg"></a>
+                          <span class="aa-date-tag">15 April, 16</span>
+                        </figure>
+                        <div class="aa-blog-single-content">
+                          <h3><a href="#">Navigating the Eviction Process Legally and Ethically</a></h3>
+                          <p>Eviction is sometimes necessary, but handling it legally and compassionately is essential. Begin with a clear, documented communication trail and adhere to all local laws regarding notice periods. Be respectful and avoid escalating situations, as a fair approach can mitigate conflict. Eviction should be the last resort, but when it’s unavoidable, follow the legal process carefully to protect your rights..</p>
+                          <div class="aa-blog-single-bottom">
+                            <a class="aa-blog-author" href="#"><i class="fa fa-user"></i> Admin</a>
+                            <a class="aa-blog-comments" href="#"><i class="fa fa-comment-o"></i>6</a>
+                          </div>
+                        </div>                   
+                      </article>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <article class="aa-blog-single">
+                        <figure class="aa-blog-img">
+                          <a href="#"><img alt="img" src="blog-img-3.jpg"></a>
+                          <span class="aa-date-tag">15 April, 16</span>
+                        </figure>
+                        <div class="aa-blog-single-content">
+                          <h3><a href="#">Sustainable Upgrades That Attract Eco-Friendly Renters</a></h3>
+                          <p>Eco-conscious tenants are drawn to properties with sustainable features. Consider upgrading to energy-efficient windows, low-flow showerheads, and LED lighting. Solar panels can be a larger investment, but they attract environmentally aware tenants and reduce long-term utility costs. Small steps, like adding recycling options, also create an appealing, eco-friendly property.</p>
+                          <div class="aa-blog-single-bottom">
+                            <a class="aa-blog-author" href="#"><i class="fa fa-user"></i> Admin</a>
+                            <a class="aa-blog-comments" href="#"><i class="fa fa-comment-o"></i>6</a>
+                          </div>
+                        </div>                   
+                      </article>
+                    </div>
+                     <div class="col-md-6 col-sm-6">
+                      <article class="aa-blog-single">
+                        <figure class="aa-blog-img">
+                          <a href="#"><img alt="img" src="blog-img-1.jpg"></a>
+                          <span class="aa-date-tag">15 April, 16</span>
+                        </figure>
+                        <div class="aa-blog-single-content">
+                          <h3><a href="#">The Benefits of Hiring a Property Management Company</a></h3>
+                          <p>For busy landlords, a property management company can handle day-to-day tasks like rent collection, tenant screening, and maintenance. They provide expertise in legal compliance and local market trends, ensuring a smooth operation. While management fees vary, the time and effort saved can make it a worthwhile investment, especially for those managing multiple properties.</p>
+                          <div class="aa-blog-single-bottom">
+                            <a class="aa-blog-author" href="#"><i class="fa fa-user"></i> Admin</a>
+                            <a class="aa-blog-comments" href="#"><i class="fa fa-comment-o"></i>6</a>
+                          </div>
+                        </div>                   
+                      </article>
+                    </div>
+                     <div class="col-md-6 col-sm-6">
+                      <article class="aa-blog-single">
+                        <figure class="aa-blog-img">
+                          <a href="#"><img alt="img" src="blog-img-3.jpg"></a>
+                          <span class="aa-date-tag">15 April, 16</span>
+                        </figure>
+                        <div class="aa-blog-single-content">
+                          <h3><a href="#">Understanding Property Taxes for Rental Properties</a></h3>
+                          <p>Property taxes can affect rental income, so it’s crucial to understand how they work. Research local tax rates, and consider working with a tax advisor to maximize deductions, like repairs and management fees. Keep detailed records to claim depreciation and lower your taxable income, and review annual property assessments to ensure accuracy.</p>
+                          <div class="aa-blog-single-bottom">
+                            <a class="aa-blog-author" href="#"><i class="fa fa-user"></i> Admin</a>
+                            <a class="aa-blog-comments" href="#"><i class="fa fa-comment-o"></i>6</a>
+                          </div>
+                        </div>                   
+                      </article>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="aa-properties-content-bottom">
+                        <nav>
+                          <ul class="pagination">
+                            <li>
+                              <a aria-label="Previous" href="#">
+                                <span aria-hidden="true">«</span>
+                              </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li class="active"><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                              <a aria-label="Next" href="#">
+                                <span aria-hidden="true">»</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Start blog sidebar -->
+              <div class="col-md-4">
+                <aside class="aa-blog-sidebar">
+                  <!-- Start single sidebar -->
+                  <div class="aa-blog-sidebar-single">
+                    <form action="">
+                      <div class="aa-blog-search">
+                        <input class="aa-search-text" type="text" placeholder="Search...">
+                        <button class="aa-search-submit" type="submit">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Start single sidebar -->
+                  <div class="aa-blog-sidebar-single">
+                    <h3>Categories</h3>
+                    <ul class="aa-blog-catg">
+                      <li>Properties <span>15000</span></li>
+                      <li>Apartment <span>5000</span></li>
+                      <li>Office  <span>3000</span></li>
+                      <li>Residential <span>4500</span></li>
+                      <li>Commercial <span>1000</span>
+                          <ul>
+                            <li>category 2.1 <span>50</span></li>
+                            <li>category 2.2 <span>100</span></li>
+                          </ul>
+                      </li>
+                      <li>Villa <span>800</span></li>
+                      <li>Bungalow  <span>200</span></li>
+                      <li>News <span>375</span></li>
+                      <li>Reviews <span>458</span></li>
+                    </ul>
+                  </div>
+                  <!-- Start single sidebar -->
+                  <div class="aa-blog-sidebar-single">
+                    <h3>Tags</h3>
+                    <div class="tag-cloud">
+                      <a href="#">Apartment</a>
+                      <a href="#">Propery</a>
+                      <a href="#">Residential</a>
+                      <a href="#">Commercial</a>
+                      <a href="#">Office</a>
+                      <a href="#">Rent</a>
+                      <a href="#">Sale</a>
+                      <a href="#">Villa</a>
+                    </div>                    
+                  </div>
+                  <!-- Start single sidebar -->
+                  <div class="aa-blog-sidebar-single">
+                    <h3>Recent Post</h3>
+                    <div class="aa-blog-recent-post">
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img alt="img" src="blog-img-3.jpg" class="media-object">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading"><a href="#">This is Title</a></h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                
+                          <span>15 April, 16</span>
+                        </div>              
+                      </div>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img alt="img" src="blog-img-2.jpg" class="media-object">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading"><a href="#">This is Title</a></h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                
+                          <span>15 April, 16</span>
+                        </div>              
+                      </div>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img alt="img" src="blog-img-1.jpg" class="media-object">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading"><a href="#">This is Title</a></h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                
+                          <span>15 April, 16</span>
+                        </div>              
+                      </div>
+                    </div>                    
+                  </div>
+                  <!-- Start single sidebar -->
+                  <div class="aa-blog-sidebar-single">                    
+                    <div class="aa-banner-ads">
+                      <a href="#">
+                        <img src="banner-ads.jpg" alt="banner img">
+                      </a>
+                    </div>                    
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Blog  -->
+
+  <!-- Footer -->
+  <footer id="aa-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="aa-footer-area">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="aa-footer-left">
+               <p>Designed by <a rel="nofollow" href="http://www.markups.io/">MarkUps.io</a></p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="aa-footer-middle">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="aa-footer-right">
+                <a href="#">Home</a>
+                <a href="#">Support</a>
+                <a href="#">License</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy & Term</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / Footer -->
+
+  <!-- jQuery library -->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <script src="js/jquery.min.js"></script>   
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>   
+  <!-- slick slider -->
+  <script type="text/javascript" src="js/slick.js"></script>
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="js/nouislider.js"></script>
+   <!-- mixit slider -->
+  <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script> 
+
+  </body>
+</html>

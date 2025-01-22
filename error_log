@@ -1,0 +1,42 @@
+[27-Oct-2024 05:43:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/khalpnce/public_html/db_connection.php:8
+Stack trace:
+#0 /home/khalpnce/public_html/db_connection.php(8): mysqli->__construct()
+#1 /home/khalpnce/public_html/login.php(3): include('/home/khalpnce/...')
+#2 {main}
+  thrown in /home/khalpnce/public_html/db_connection.php on line 8
+[27-Oct-2024 05:43:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/khalpnce/public_html/db_connection.php:8
+Stack trace:
+#0 /home/khalpnce/public_html/db_connection.php(8): mysqli->__construct()
+#1 /home/khalpnce/public_html/login.php(3): include('/home/khalpnce/...')
+#2 {main}
+  thrown in /home/khalpnce/public_html/db_connection.php on line 8
+[27-Oct-2024 05:45:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/khalpnce/public_html/db_connection.php:8
+Stack trace:
+#0 /home/khalpnce/public_html/db_connection.php(8): mysqli->__construct()
+#1 /home/khalpnce/public_html/login.php(3): include('/home/khalpnce/...')
+#2 {main}
+  thrown in /home/khalpnce/public_html/db_connection.php on line 8
+[27-Oct-2024 05:46:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/khalpnce/public_html/db_connection.php:8
+Stack trace:
+#0 /home/khalpnce/public_html/db_connection.php(8): mysqli->__construct()
+#1 /home/khalpnce/public_html/login.php(3): include('/home/khalpnce/...')
+#2 {main}
+  thrown in /home/khalpnce/public_html/db_connection.php on line 8
+[27-Oct-2024 05:53:30 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/khalpnce/public_html/db_connection.php:8
+Stack trace:
+#0 /home/khalpnce/public_html/db_connection.php(8): mysqli->__construct()
+#1 /home/khalpnce/public_html/login.php(3): include('/home/khalpnce/...')
+#2 {main}
+  thrown in /home/khalpnce/public_html/db_connection.php on line 8
+[27-Oct-2024 05:53:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/khalpnce/public_html/db_connection.php:8
+Stack trace:
+#0 /home/khalpnce/public_html/db_connection.php(8): mysqli->__construct()
+#1 /home/khalpnce/public_html/login.php(3): include('/home/khalpnce/...')
+#2 {main}
+  thrown in /home/khalpnce/public_html/db_connection.php on line 8
+[27-Oct-2024 05:56:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/khalpnce/public_html/db_connection.php:8
+Stack trace:
+#0 /home/khalpnce/public_html/db_connection.php(8): mysqli->__construct()
+#1 /home/khalpnce/public_html/login.php(3): include('/home/khalpnce/...')
+#2 {main}
+  thrown in /home/khalpnce/public_html/db_connection.php on line 8
